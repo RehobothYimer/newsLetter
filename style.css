@@ -56,14 +56,39 @@ line-height: 1.4;
       margin-right: 10px;
           }
     form{
-      display: flex;
+      display: grid;
       flex-direction: column;
-      margin-left: 0%; 
+      padding: 15px; 
+      max-width: 40rem;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+     margin: -5PX;
     }
-     label{
-      margin-top: 15px;
-      
+    .form-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 20px;
+      justify-content: flex-end; /* Align items horizontally (optional) */
+      align-items: flex-end;
+     /* border: 1px solid #ccc;*/
+      margin-bottom: -18px;
     }
+    .form-group .error {
+      flex: 1;
+      text-align: right;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      margin-left: 12;
+      color: red;
+
+    }
+    .form-group label {
+      flex: 1;
+    }
+  
     #validEmailMessage{
       display: flex;
       flex-direction: column;
@@ -72,29 +97,32 @@ line-height: 1.4;
      input{
       margin-bottom: 5%;
       margin-top: 2%;
+      padding: 10px;
       padding: 10px 20px;
       font-family: inherit;
-      border-radius: 5px;
-      outline:none;
+      border-radius: 10px;
       border: 1px solid hsl(231, 7%, 60%);
-      width: 80%;
+      width: 90%;
+      height: 50px;
     }
 
  
    button {
       background-color: #232742;
       padding: 10px 20px;
+      margin-top: -13PX;
       cursor: pointer;
       outline: none;
       border-radius: 8px;
-      width: 80%;
+      width: 90%;
+      height: 50px;
       font-family: inherit;
         }
     button:hover{
-      background-color: hsl(4, 100%, 67%);
+      background-color: #E85B55;
       transition: all 1s;
+
     }
-   
 .hidden {
   display: none;
   opacity: 0;
@@ -145,6 +173,7 @@ width: 100%;
   .sign-up{
     width: 100%;
     padding: 20px;
+    display: grid;
   }
   .left {
     width: 100%;

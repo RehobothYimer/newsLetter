@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       );
   }
-  const validEmailMessage = document.querySelector('em');
+  const validEmailMessage = document.getElementById("validEmailMessage");
 
   function submit(e) {
     e.preventDefault();
@@ -34,20 +34,20 @@ document.addEventListener("DOMContentLoaded", function () {
       sendConfirmationText.innerHTML = email;
       toggleCard();
       emailInput.value = "";
+      validEmailMessage.textContent = "";
       signUpForm.classList.remove(validEmailMessage);
       validEmailMessage.classList.remove(validEmailMessage);
     } else {
       validEmailMessage.textContent = "Valid email required.";
       //validEmailMessage.style.bottom = "-1px";
-      validEmailMessage.style.left = "200px";
-      validEmailMessage.style.paddingBottom = "-12px";
-      validEmailMessage.style.display = "flex";
-     
-      validEmailMessage.style.position = "relative"; 
+     // validEmailMessage.style.left = "200px";
+      //validEmailMessage.style.paddingBottom = "-12px";
+      //validEmailMessage.style.display = "flex";
+      //validEmailMessage.style.position = "relative"; 
       emailInput.style.border = "1px solid var(--primary-clr-Tomato)";
       emailInput.style.color = "var(--primary-clr-Tomato)";
       emailInput.style.backgroundColor = "hsla(4, 85%, 79%, 0.644)";
-      em
+    
     }
   }
 });
