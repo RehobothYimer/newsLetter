@@ -38,9 +38,16 @@ document.addEventListener("DOMContentLoaded", function () {
       validEmailMessage.classList.remove(validEmailMessage);
     } else {
       validEmailMessage.textContent = "Valid email required.";
+      //validEmailMessage.style.bottom = "-1px";
+      validEmailMessage.style.left = "200px";
+      validEmailMessage.style.paddingBottom = "-12px";
+      validEmailMessage.style.display = "flex";
+     
+      validEmailMessage.style.position = "relative"; 
       emailInput.style.border = "1px solid var(--primary-clr-Tomato)";
       emailInput.style.color = "var(--primary-clr-Tomato)";
       emailInput.style.backgroundColor = "hsla(4, 85%, 79%, 0.644)";
+      em
     }
   }
 });

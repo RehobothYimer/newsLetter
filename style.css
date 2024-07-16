@@ -64,7 +64,11 @@ line-height: 1.4;
       margin-top: 15px;
       
     }
-    
+    #validEmailMessage{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0%; 
+    }
      input{
       margin-bottom: 5%;
       margin-top: 2%;
@@ -75,9 +79,7 @@ line-height: 1.4;
       border: 1px solid hsl(231, 7%, 60%);
       width: 80%;
     }
-   .invalidEmail{
-   display: none;
-  }      
+
  
    button {
       background-color: #232742;
@@ -96,7 +98,7 @@ line-height: 1.4;
 .hidden {
   display: none;
   opacity: 0;
-  transition: opacity 0.5s ease; /* Adjust the transition properties as needed */
+  transition: opacity 0.5s ease; 
 }
 .sign-up-end {
   background-color: #FFFFFF;
